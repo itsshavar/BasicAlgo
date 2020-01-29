@@ -1,5 +1,6 @@
 
 def LongestCommonSubSequence(String1 : str,String2 : str) -> int:
+    cs = []
     cols = len(String1)+1
     rows = len(String2)+1
     T = [[0] * cols] * rows
