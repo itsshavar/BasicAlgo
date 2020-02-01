@@ -28,7 +28,7 @@ def matrix_chain_order(matrices : List[int]) -> int :
     for gap in range(2, matrices_length):
         for index_i in range(0, matrices_length - gap):
             index_j = index_i + gap
-            T[index_i][index_j] = 10000
+            T[index_i][index_j] = float('inf')
             for index_k in range(index_i + 1, index_j):
                 temp = T[index_i][index_k] + T[index_k][index_j] + matrices[index_i] * matrices[index_k] * matrices[index_j]
                 if temp < T[index_i][index_j]:
