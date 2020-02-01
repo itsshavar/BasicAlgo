@@ -1,6 +1,6 @@
 from typing import List
 def subset_sum(input: List[int],total : int) -> int:
-    
+    """
     cols = total + 1
     rows = len(input) + 1
     T = [[False] * cols] * rows
@@ -15,6 +15,7 @@ def subset_sum(input: List[int],total : int) -> int:
                T[i][j] = T[i-1][j]
         
     return T[rows-1][cols-1]
+    """
     
     """
     cols = total + 1         # Plus 1 for 0 valued col.
@@ -37,9 +38,6 @@ def main():
     input = [1,4,6,7,8]
     total = 12
     print(subset_sum(input,total))
-    ''' for i in range(1):
-        if subset_sum(input,i) == False:
-            print(i)
-    '''
+
 if __name__ == "__main__":
     main()

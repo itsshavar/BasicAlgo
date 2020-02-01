@@ -1,3 +1,5 @@
+
+
 from typing import List
 
 def coin_change(coins: List[int],total)->int :
@@ -17,7 +19,7 @@ def coin_change(coins: List[int],total)->int :
 def main():
     input = [1,5,6,8]
     total = 17
-    print(min_coins2(input,total))
+    print(coin_change(input,total))
     
 if __name__ == "__main__":
     main()
