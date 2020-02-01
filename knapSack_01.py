@@ -14,7 +14,7 @@ Runtime Analysis:
 Time complexity - O(W * total items)
 
 """
-maximize ${\sum _{i=1}^{n}v_{i}x_{i}} \sum _{i=1}^{n}v_{i}x_{i}$
+
 def knapSack(weights : List[int],values : List[int], total : int) -> int :
     cols = total + 1
     rows = len(weights) + 1
