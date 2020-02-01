@@ -1,12 +1,13 @@
 from typing import List
+from matplotlib import mathtext
 
 """
 Problem Statement 
 =========================
 The most common problem being solved is the 0-1 knapsack problem, which restricts the number {\displaystyle x_{i}} x_{i} of copies of each kind of item to zero or one. Given a set of {\displaystyle n} n items numbered from 1 up to {\displaystyle n} n, each with a weight {\displaystyle w_{i}} w_{i} and a value {\displaystyle v_{i}} v_{i}, along with a maximum weight capacity {\displaystyle W} W,
 
-maximize {\displaystyle \sum _{i=1}^{n}v_{i}x_{i}} \sum _{i=1}^{n}v_{i}x_{i}
-subject to {\displaystyle \sum _{i=1}^{n}w_{i}x_{i}\leq W} \sum _{i=1}^{n}w_{i}x_{i}\leq W and {\displaystyle x_{i}\in \{0,1\}} x_{i}\in \{0,1\}.
+maximize r"{\sum _{i=1}^{n}v_{i}x_{i}} \sum _{i=1}^{n}v_{i}x_{i}"
+subject to r"{\sum _{i=1}^{n}w_{i}x_{i}\leq W} \sum _{i=1}^{n}w_{i}x_{i}\leq W" and r"{x_{i}\in \{0,1\}} x_{i}\in \{0,1\}".
 
 Runtime Analysis:
 =======================
